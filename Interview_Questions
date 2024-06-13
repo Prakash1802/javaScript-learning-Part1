@@ -13,3 +13,19 @@ for(let i = 0; i < numArray.length; i++){
   }
 }
 console.log(maxNum);
+
+Question-2 find pairs of numbers in an array that sum up to 10 and return these pairs in a new array
+
+const array = [2, 4, 5, 3, 6, 4, 5, 0, 3, 2, 7, 8];
+const targetSum = 10;
+const pairs = [];
+
+for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+        if (array[i] + array[j] === targetSum) {
+            pairs.push([array[i], array[j]]);
+        }
+    }
+}
+
+console.log(pairs); // Output: [ [ 4, 6 ], [ 3, 7 ], [ 2, 8 ] ]
