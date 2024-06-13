@@ -1,0 +1,14 @@
+
+Question Find max number in Array .
+const numArray = [10,20,3,4,5,50];
+
+let maxNum = numArray[0];
+
+for(let i = 0; i < numArray.length; i++){
+
+  if(numArray[i] > maxNum){
+  
+  maxNum = numArray[i];
+  }
+}
+console.log(maxNum);
